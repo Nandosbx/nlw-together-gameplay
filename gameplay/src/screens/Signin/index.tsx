@@ -9,6 +9,10 @@ export function Signin() {
   return (
     <View>
       <Image source={IllustrationImg} style={styles.image} />
+
+      <View style={styles.content}>
+        <Text style={styles.title}></Text>
+      </View>
     </View>
   );
 }
