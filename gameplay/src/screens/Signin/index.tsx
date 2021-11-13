@@ -3,6 +3,7 @@ import React from "react";
 import { View, Text, Image, StatusBar } from "react-native";
 
 import IllustrationImg from "../../assets/illustration.png";
+import { ButtonIcon } from "../../components/ButtonIcon";
 import { styles } from "./styles";
 
 export function SignIn() {
@@ -30,6 +31,8 @@ export function SignIn() {
           Crie grupos para jogar seus games{"\n"}
           favoritos com seus amigos
         </Text>
+
+        <ButtonIcon />
       </View>
     </View>
   );
