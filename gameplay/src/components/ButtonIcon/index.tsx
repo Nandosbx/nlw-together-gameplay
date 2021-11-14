@@ -6,14 +6,18 @@ import { styles } from "./styles";
 
 import DiscordImg from "../../assets/discord.png";
 
-export function ButtonIcon() {
+type Props = {
+  title: string;
+};
+
+export function ButtonIcon({ title }: Props) {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity style={styles.container}>
       <View style={styles.iconWrapper}>
         <Image source={DiscordImg} style={styles.icon} />
       </View>
 
-      <Text style={styles.title}>Entrar com o Discord</Text>
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 }
