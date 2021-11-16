@@ -28,8 +28,8 @@ export function SignIn() {
         </Text>
 
         <Text style={styles.subtitle}>
-          Crie grupos para jogar seus games{"\n"}
-          favoritos com seus amigos
+          Conecte-se{"\n"} e organize suas jogatinas{"\n"}
+          facilmente.
         </Text>
 
         <ButtonIcon title="Entrar com Discord" activeOpacity={0.7} />
