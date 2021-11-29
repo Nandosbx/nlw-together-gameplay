@@ -29,7 +29,7 @@ export function SignIn() {
 
         <Text style={styles.subtitle}>
           Conecte-se{"\n"} e organize suas jogatinas{"\n"}
-          facilmente.
+          facilmente
         </Text>
 
         <ButtonIcon title="Entrar com Discord" activeOpacity={0.7} />
