@@ -11,12 +11,6 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />;
   } else {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text style={{ fontFamily: "Inter_900Black", fontSize: 40 }}>
-          Inter Black
-        </Text>
-      </View>
-    );
+    return <SignIn />;
   }
 }
