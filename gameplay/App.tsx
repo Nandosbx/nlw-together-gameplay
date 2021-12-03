@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { StatusBar } from "react-native";
 import { SignIn } from "./src/screens/SignIn";
 import AppLoading from "expo-app-loading";
 import {
@@ -23,6 +23,15 @@ export default function App() {
   if (!fontsLoaded) {
     return <AppLoading />;
   } else {
-    return <SignIn />;
+    return (
+      <>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <SignIn />
+      </>
+    );
   }
 }
