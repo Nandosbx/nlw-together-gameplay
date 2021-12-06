@@ -33,7 +33,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        <SignIn />
+        <SignIn /> 
       </Background>
     );
   }
