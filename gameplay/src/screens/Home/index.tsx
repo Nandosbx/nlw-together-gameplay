@@ -5,5 +5,9 @@ import { View } from "react-native";
 import { styles } from "./styles";
 
 export function Home() {
-  return <View></View>;
+  return (
+    <View>
+      <View style={styles.header}></View>
+    </View>
+  );
 }
