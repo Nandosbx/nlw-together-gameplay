@@ -1,6 +1,7 @@
 import React from "react";
 import { StatusBar } from "react-native";
 import { SignIn } from "./src/screens/SignIn";
+import { Home } from "./src/screens/Home";
 import AppLoading from "expo-app-loading";
 import {
   useFonts,
@@ -33,7 +34,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        <SignIn /> 
+        <Home />
       </Background>
     );
   }
