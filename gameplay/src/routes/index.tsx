@@ -1,7 +1,7 @@
 import React from "react";
 
 import { NavigationContainer } from "@react-navigation/native";
-import { Background } from "../../src/components/Background";
+import { Background } from "../components/Background";
 
 import { AuthRoutes } from "./auth.routes";
 
