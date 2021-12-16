@@ -1,14 +1,11 @@
 import React from "react";
 import { StatusBar } from "react-native";
-import { SignIn } from "./src/screens/SignIn";
-import { Home } from "./src/screens/Home";
+import { Routes } from "./src/routes";
 import AppLoading from "expo-app-loading";
 import {
   useFonts,
   Inter_400Regular,
-  Inter_500Medium,
-  Inter_900Black,
-} from "@expo-google-fonts/inter";
+  Inter_500Medium} from "@expo-google-fonts/inter";
 import {
   Rajdhani_500Medium,
   Rajdhani_700Bold,
@@ -34,7 +31,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        <Home />
+        <Routes />
       </Background>
     );
   }
