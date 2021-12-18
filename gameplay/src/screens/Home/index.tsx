@@ -7,7 +7,7 @@ import { styles } from "./styles";
 
 export function Home() {
   return (
-    <View>
+    <View style={styles.container}>
       <View style={styles.header}>
         <Profile />
       </View>

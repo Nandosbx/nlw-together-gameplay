@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import { LinearGradient } from "expo-linear-gradient";
 
-
 import { styles } from "./styles";
 import { theme } from "../../global/styles/themes";
 
