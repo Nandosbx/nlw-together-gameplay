@@ -5,7 +5,8 @@ import AppLoading from "expo-app-loading";
 import {
   useFonts,
   Inter_400Regular,
-  Inter_500Medium} from "@expo-google-fonts/inter";
+  Inter_500Medium,
+} from "@expo-google-fonts/inter";
 import {
   Rajdhani_500Medium,
   Rajdhani_700Bold,
