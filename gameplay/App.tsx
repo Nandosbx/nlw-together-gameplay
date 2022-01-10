@@ -11,8 +11,8 @@ import {
   Rajdhani_500Medium,
   Rajdhani_700Bold,
 } from "@expo-google-fonts/rajdhani";
-
 import { Background } from "./src/components/Background";
+
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -32,6 +32,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
+
         <Routes />
       </Background>
     );
