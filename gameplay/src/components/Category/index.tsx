@@ -33,7 +33,7 @@ export function Category({
             <Icon width={48} height={48} />
           </View>
 
-          <Text style={styles.title}></Text>
+          <Text style={styles.title}> {title}</Text>
         </View>
       </LinearGradient>
     </RectButton>
