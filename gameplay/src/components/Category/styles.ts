@@ -33,5 +33,7 @@ export const styles = StyleSheet.create({
     height: 10,
     backgroundColor: theme.colors.secondary100,
     alignSelf: 'flex-end'
-  }
+  },
+
+  checked: {},
 })
