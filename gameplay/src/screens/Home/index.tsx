@@ -20,7 +20,7 @@ export function Home() {
         </View>
 
         <View>
-          <CategorySelect />
+          <CategorySelect categorySelected/>
         </View>
       </View>
     </Background>
