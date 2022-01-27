@@ -4,7 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { styles } from "./styles";
 import { theme } from "../../global/styles/themes";
 
-type Props ={
+type Props = {
   children: ReactNode;
 };
 

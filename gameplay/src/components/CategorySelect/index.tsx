@@ -6,7 +6,8 @@ import { Category } from "../Category";
 import { styles } from "./styles";
 
 type Props = {
-  categorySelected: boolean;
+  categorySelected: string;
+  setCategory: (categoryId: string) => void;
 };
 
 export function CategorySelect({ categorySelected }: Props) {
