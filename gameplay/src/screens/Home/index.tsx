@@ -17,19 +17,15 @@ export function Home() {
 
   return (
     <Background>
-      <View>
-        <View style={styles.header}>
-          <Profile />
-          <ButtonAdd />
-        </View>
-
-        <View>
-          <CategorySelect
-            categorySelected={category}
-            setCategory={handleCategorySelect}
-          />
-        </View>
+      <View style={styles.header}>
+        <Profile />
+        <ButtonAdd />
       </View>
+
+      <CategorySelect
+        categorySelected={category}
+        setCategory={handleCategorySelect}
+      />
     </Background>
   );
 }

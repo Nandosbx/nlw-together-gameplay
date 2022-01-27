@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     marginRight: 8
   },
 
-  content: {
+  content: {  
     width: 100,
     height: 116,
     backgroundColor: theme.colors.secondary40,
@@ -35,5 +35,8 @@ export const styles = StyleSheet.create({
     alignSelf: 'flex-end'
   },
 
-  checked: {},
+  checked: {
+    justifyContent: "center",
+    alignItems: 'center',
+  },
 })
