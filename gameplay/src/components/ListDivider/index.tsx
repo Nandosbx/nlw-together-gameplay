@@ -4,6 +4,6 @@ import { View } from "react-native";
 
 import { styles } from "./styles";
 
-export function GuildItem() {
+export function ListDivider() {
   return <View></View>;
 }
