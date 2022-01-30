@@ -1,15 +1,31 @@
 import React, { useState } from "react";
 
-import { View, Text } from "react-native";
+import { View, Text, FlatList } from "react-native";
 import { Background } from "../../components/Background";
 import { ButtonAdd } from "../../components/ButtonAdd";
 import { CategorySelect } from "../../components/CategorySelect";
+import { ListHeader } from "../../components/ListHeader";
 import { Profile } from "../../components/Profile";
 
 import { styles } from "./styles";
 
 export function Home() {
   const [category, setCategory] = useState("");
+
+  const appointments = [
+    {
+      id: "1",
+      guild: {
+        id: "1",
+        name: "Lendários",
+        icon: null,
+        owner: true,
+      },
+      category: "1",
+      date: "22/06 as 20:40h",
+      description: "bla bla bla",
+    },
+  ];
 
   function handleCategorySelect(categoryId: string) {
     categoryId === category ? setCategory("") : setCategory(categoryId);
@@ -22,16 +38,21 @@ export function Home() {
         <ButtonAdd />
       </View>
 
-
-<View>
-      <CategorySelect
-        categorySelected={category}
-        setCategory={handleCategorySelect}
-      />
-
       <View>
-        
-      </View>
+        <CategorySelect
+          categorySelected={category}
+          setCategory={handleCategorySelect}
+        />
+
+        <View style={styles.content}>
+          <ListHeader title="Partidas agendadas" subtitle="Total 6" />
+
+          <FlatList
+            data={appointments}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => <Text>{item.guild.name}</Text>}
+          />
+        </View>
       </View>
     </Background>
   );
